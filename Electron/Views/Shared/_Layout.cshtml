@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="left-side">
+            <a class="logo" href="">Electron</a>
+            <search>
+                <input type="text" placeholder="Search">
+                <button class="search">
+                    <img class="search-icon" src="./images/search-icon.svg">
+                </button>
+            </search>
+        </div>
+
+        <div class="right-side">
+            <img class="account-icon" src="./images/account-icon.svg">
+            <img class="shopping-cart" src="./images/shopping-cart-icon.svg">
+        </div>
+    </header>
+    
+    <div class="navigation-bar">
+        <a href="">Shop All</a>
+        <a href="">Computers</a>
+        <a href="">Tablets</a>
+        <a href="">Audio</a>
+        <a href="">Mobile</a>
+    </div>
+
+    @RenderBody()
+</body>
+</html>
